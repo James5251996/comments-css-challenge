@@ -2,46 +2,106 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: lightgray;
+    background-color: #F6F6F6;
     justify-content:space-evenly;
     
 }
 .person {
     display: flex;
-    width: 900px;
-    border-radius: 5px;
+    width: 800px;
+    border-radius: 10px;
     background-color: white;
     padding: 10px;
     justify-content: space-between;
     margin-top: 20px;
     
 }
-.personReply {
+
+.personReplyToo {
     display: flex;
-    width: 900px;
-    border-radius: 5px;
-    background-color: white;
-    padding: 10px;
+    width: 700px;
+    padding-left: 50px;
     justify-content: space-between;
     margin-top: 20px;
+    margin-left: 50px;
+    border-left: 2px solid gray;
     
 }
 .plusMinus {
-    background-color: #F6F6F6;
+    background-color: white;
     text-align: center;
-    width: 20px;
-    margin: 25px 0 25px 0;
+    justify-items: center;
+    padding-top: 25px;
     color: blue;
     display: flex;
     flex-direction: column;
     gap: 7px;
+    border-radius: 5px;
+    padding-left: 50px;
+}
+.stylePlusMinus {
+    background-color: #E8E8E8;
+    border-radius: 10px;
 }
 .picAndcomment {
     display: flex;
     flex-direction: column;
     padding-left: 20px;
+    background-color: white;
+    border-radius: 5px;
 }
-.comment {
+.header {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 20px;
+
+}
+.replyImage {
+    color: blue;
+}
+
+.deleteImage {
+    color: red;
+}
+.atColor {
+    color: blue;
+}
+#resizeImage {
+    height: 45px;
+}
+.deleteAndReply {
+    display: flex; 
+    gap: 25px;
+}
+.newInput {
+    display: flex;
+    width: 800px;
+    border-radius: 5px;
+    background-color: white;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin-top: 20px;
+    
+}
+.inputbox {
+    width: 500px;
+    border-radius: 5px;
+    height: 100px;
+    border-color: #E8E8E8;
+    text-align: left;
+    vertical-align: top;
+}
+.sendBtn {
+    background-color: #6699cc;
+    color: white;
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+}
+.you {
+    background-color: #6699cc;
+    color: white;
+    border-radius: 7px;
 }

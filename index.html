@@ -34,15 +34,25 @@
   <!-- Comment #1 -->
   <div class="person">
     <span class="plusMinus">
-      <img src="./images/icon-plus.svg" alt="">
-      12
-      <img src="./images/icon-minus.svg" alt="">
+      <div class="stylePlusMinus">
+        <img src="./images/icon-plus.svg" alt="">
+        12
+        <img src="./images/icon-minus.svg" alt="">
+      </div>
     </span>
     <div class="picAndcomment">
       <div class="header">
-        <img src="./images/avatars/image-amyrobson.png" alt="profile" />
-        amyrobson
-        1 month ago
+        <div>
+          <img src="./images/avatars/image-amyrobson.png" alt="profile" id="resizeImage"/>
+          <b>amyrobson</b>
+          1 month ago
+        </div>
+        <div>
+          <span class="replyImage">
+          <img src="./images/icon-reply.svg" alt="">
+          Reply
+          </span>
+        </div>
       </div>
       Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the
       design and the responsiveness at various breakpoints works really well.
@@ -51,53 +61,98 @@
   <!-- Comment #2 -->
   <div class="person">
     <div class="plusMinus">
-      <img src="./images/icon-plus.svg" alt="">
-      5
-      <img src="./images/icon-minus.svg" alt="">
+      <div class="stylePlusMinus">
+        <img src="./images/icon-plus.svg" alt="">
+        5
+        <img src="./images/icon-minus.svg" alt="">
+      </div>
     </div>
     <div class="picAndcomment">
       <div class="header">
-        <img src="./images/avatars/image-maxblagun.png" alt="profile" />
-        maxblagun
-        2 weeks ago
+        <div>
+          <img src="./images/avatars/image-maxblagun.png" alt="profile" id="resizeImage"/>
+          <b>maxblagun</b>
+          2 weeks ago
+        </div>
+        <div>
+          <span class="replyImage">
+          <img src="./images/icon-reply.svg" alt="">
+          Reply
+          </span>
+        </div>
       </div>
       Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into
       React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!
     </div>
   </div>
   <!-- Comment #3 (Reply to comment #2) -->
-  <div class="personReply">
+  <div class="personReplyToo">
     <div class="plusMinus">
-      <img src="./images/icon-plus.svg" alt="">
-      4
-      <img src="./images/icon-minus.svg" alt="">
+      <div class="stylePlusMinus">
+        <img src="./images/icon-plus.svg" alt="">
+        4
+        <img src="./images/icon-minus.svg" alt="">
+      </div>
     </div>
     <div class="picAndcomment">
         <div class="header">
-        <img src="./images/avatars/image-ramsesmiron.png" alt="profile" />
-        ramsesmiron
-        1 week ago
+          <div>
+            <img src="./images/avatars/image-ramsesmiron.png" alt="profile" id="resizeImage"/>
+            <b>ramsesmiron</b>
+            1 week ago
+        </div>
+        <div>
+            <span class="replyImage">
+            <img src="./images/icon-reply.svg" alt="">
+            Reply
+          </span>
+        </div>
       </div>
-      @maxblagun If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering
+      <div>
+      <span class="atColor">@maxblagun</span> If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering
       React. It's very tempting to jump ahead but lay a solid foundation first.
+      </div>
     </div>
   </div>
   <!-- Comment #4 (Reply to comment #2) -->
-  <div class="personReply">
+  <div class="personReplyToo">
     <span class="plusMinus">
-      <img src="./images/icon-plus.svg" alt="">
-      2
-      <img src="./images/icon-minus.svg" alt="">
+      <div class="stylePlusMinus">
+        <img src="./images/icon-plus.svg" alt="">
+        2
+        <img src="./images/icon-minus.svg" alt="">
+      </div>
     </span>
     <div class="picAndcomment">
       <div class="header">
-      <img src="./images/avatars/image-juliusomo.png" alt="profile" />
-      juliusomo
-      2 days ago
+        <div>
+        <img src="./images/avatars/image-juliusomo.png" alt="profile" id="resizeImage"/>
+        <b>juliusomo</b>
+        <button class="you">you</button>
+        2 days ago
       </div>
-      @ramsesmiron I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the
+      <div class="deleteAndReply">
+        <span class="deleteImage">
+        <img src="./images/icon-delete.svg" alt="">
+        Delete
+        </span>
+        <span class="replyImage">
+        <img src="./images/icon-reply.svg" alt="">
+        Reply
+        </span>
+      </div>
+      </div>
+      <div><span class="atColor">@ramsesmiron</span> I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the
       newest library/framework. But the fundamentals are what stay constant.
+      </div>
     </div>
+  </div>
+
+
+  <div class="newInput">
+    <img src="./images/avatars/image-juliusomo.png" alt="profile" id="resizeImage">
+    <textarea class="inputbox" placeholder="Add a comment..."></textarea>
+    <button class="sendBtn">Send</button>
   </div>
 
 
