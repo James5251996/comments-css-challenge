@@ -55,7 +55,8 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 
 }
 .replyImage {
@@ -104,4 +105,25 @@ body {
     background-color: #6699cc;
     color: white;
     border-radius: 7px;
+}
+.replyBtn:hover {
+    background-color: #6699cc;
+}
+.deleteBtn:hover {
+    background-color: #6699cc;
+}
+
+button:hover {
+    outline: none;
+    border: #E8E8E8;
+    background-color: blue;
+}
+button {
+    border: none;
+}
+.replyBtn {
+    background-color: white;
+}
+.deleteBtn {
+    background-color: white;
 }
